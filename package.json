@@ -1,6 +1,11 @@
 {
   "name": "contact-list",
   "version": "0.1.0",
+  "description": "https://www.freecodecamp.org/news/getting-started-with-react-a-modern-project-based-guide-for-beginners-including-hooks-2/#letsbuildacontactslist",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ROKingcoder33/contact-list-react.git"
+  },
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

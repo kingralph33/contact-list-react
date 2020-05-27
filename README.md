@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Description
+Quick React Tutorial from https://www.freecodecamp.org/news/getting-started-with-react-a-modern-project-based-guide-for-beginners-including-hooks-2/#letsbuildacontactslist
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:

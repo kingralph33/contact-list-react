@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./styles.css";
+import ContactCard from './ContactCard';
 
-function App() {
+const App = () => {
+  const [contacts, setContacts] = useState([]);
+  useEffect(() => {
+    fetch("https://randomuser.me/api/?results=4")
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      setContacts(data.results);
+    });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {contacts.map(contact => (
+        <ContactCard
+          avatar={contact.picture.medium}
+          name={contact.name.first + " " + contact.name.last}
+          email={contact.email}
+          age={contact.dob.age}
+        />
+      ))}
+    </>
   );
-}
+};
 
 export default App;
