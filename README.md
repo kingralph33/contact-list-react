@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Quick React Tutorial from (https://www.freecodecamp.org/news/getting-started-with-react-a-modern-project-based-guide-for-beginners-including-hooks-2/#letsbuildacontactslist)
 [link] (https://www.freecodecamp.org/news/getting-started-with-react-a-modern-project-based-guide-for-beginners-including-hooks-2/#letsbuildacontactslist)
 
+http://github.com - automatic!
+[GitHub](http://github.com)
 
 ## Available Scripts
 
